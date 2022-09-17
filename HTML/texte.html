@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      * {
+        margin: 0%;
+        padding: 0%;
+      }
+      input {
+        display: none;
+        width: 300px;
+      }
+      #checkbox:checked ~ #fundo {
+        transform: translateX(100%);
+        background-color: rgb(155, 99, 99);
+        transition: all 1s;
+        opacity: 0.7;
+      }
+      #checkbox:checked ~ #menu {
+        transform: translateX(300px);
+        transition: linear 1s;
+      }
+      #checkbox:checked ~ label {
+        transform: rotateY(200deg);
+      }
+      #menu {
+        left: -300px;
+        width: 300px;
+        height: 100%;
+        position: absolute;
+        background-color: #000;
+        z-index: 1;
+        transition: all 2.5s;
+      }
+      img {
+        width: 45px;
+      }
+      ul {
+        list-style: none;
+      }
+      a {
+        padding: 20px;
+        display: block;
+        text-decoration: none;
+        color: aliceblue;
+        text-align: center;
+      }
+      a:hover {
+        color: aqua;
+        background-color: rgb(120, 117, 122);
+      }
+      .cor:hover {
+        color: #000;
+      }
+      label {
+        z-index: 2;
+        position: absolute;
+        transition: all 1s;
+        top: 200px;
+      }
+      h1 {
+        text-align: center;
+      }
+      #fundo {
+        position: absolute;
+        height: 100%;
+        left: -100%;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <input type="checkbox" id="checkbox" />
+    <label for="checkbox">
+      <img src="logo1.jpg" />
+    </label>
+    <div id="menu">
+      <ul>
+        <li><a href="#">Parte 1</a></li>
+        <li><a href="#">Parte 2</a></li>
+      </ul>
+    </div>
+    <div id="fundo"></div>
+    <h1>Mneu lateral</h1>
+  </body>
+</html>
+
+<div class="centro">
+  <ul id="menu">
+      <li class="itemmenu"><a href="pagina1.html">Pagina 1</a></li>
+      <li class="itemmenu"><a href="pagina2.html">Pagina 2</a></li>
+      <li class="itemmenu"><a href="pagina3.html">Pagina 3</a></li>
+      <li class="itemmenu"><a href="pagina4.html">Pagina 4</a></li>
+      <li class="itemmenu"><a href="pagina5.html">Pagina 5</a></li>
+      <li class="itemmenu"><a href="pagina6.html">Pagina 6</a></li>
+      <li class="itemmenu"><a href="pagina7.html">Pagina 7</a></li>
+      <li class="itemmenu"><a href="pagina8.html">Pagina 8</a></li>
+      <li class="itemmenu"><a href="pagina9.html">Pagina 9</a></li>
+  </ul>
+</div>
+
+
+<div class="centro">
+  <input type="checkbox" id="check">
+  <label for="check" class="checkbtn">
+    <i class="fas fa-bars"></i>
+  </label>
+  <label class="logo">Minha Logo</label>
+  <ul id="menu">
+    <li class="itemmenu"><a href="pagina1.html">Pagina 1</a></li>
+    <li class="itemmenu"><a href="pagina2.html">Pagina 2</a></li>
+    <li class="itemmenu"><a href="pagina3.html">Pagina 3</a></li>
+    <li class="itemmenu"><a href="pagina4.html">Pagina 4</a></li>
+    <li class="itemmenu"><a href="pagina5.html">Pagina 5</a></li>
+    <li class="itemmenu"><a href="pagina6.html">Pagina 6</a></li>
+    <li class="itemmenu"><a href="pagina7.html">Pagina 7</a></li>
+    <li class="itemmenu"><a href="pagina8.html">Pagina 8</a></li>
+    <li class="itemmenu"><a href="pagina9.html">Pagina 9</a></li>
+  </ul>
+</div>
+
+
+
+
+<div id="menuMovel">
+    <input type="checkbox" id="checkbox" />
+    <label for="checkbox">
+      <img src="logo1.jpg" />
+    </label>
+    <div id="menu">
+      <ul>
+        <li><a href="#">Parte 1</a></li>
+        <li><a href="#">Parte 2</a></li>
+      </ul>
+    </div>
+    <div id="fundo"></div>
+</div>

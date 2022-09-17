@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    background-color: #000;
+}
+/* Grid Layout */
+#container{
+    display:grid;
+    min-height: 100vh;
+    min-width: 100vw;
+    grid-template-areas: "cabeca cabeca cabeca"
+                         "texto texto texto"
+                         "rodape rodape rodape";
+    grid-template-rows: 0.3fr .8fr 0.3fr;
+}
+.cabeca{
+    grid-area: cabeca;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+.texto{
+    grid-area: texto;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    background: linear-gradient(72deg, #3DEBB0 1%,#8956F3 99%);
+}
+.rodape{
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-around;
+    background:  linear-gradient(100deg, #000 2%, #1C1C1C 98%);
+    width: 100%;
+    height: 100%;
+}
+/* Flexbox */
+/* Cabeça */
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#logo{
+    font-size: 40px;
+    margin-left: 5px;
+    color: #fff;
+}
+#title{
+    color: black;
+    background: linear-gradient(72deg, #3DEBB0 1%,#8956F3 99%);
+    border-radius: 6px;
+}
+/* texto */
+#tex{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    box-shadow: 9px 7px 5px #000;
+    height: 50%;
+    width: 50%;
+    overflow: scroll;
+    padding: 2px;
+    margin-top: 20px;
+    background-color: #ddd;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#titulo{
+    color: #000;
+    text-align: center;
+}
+#titulo:hover{
+    color: #fff;
+    width: 300px;
+    margin-left: 30%;
+    background: linear-gradient(72deg, rgb(213, 140, 250) 1%, #0a2950 99%);
+    border-radius: 10px;
+}
+.paragrafo{
+    font-size: 15px;
+    padding-left: 10px;
+}
+.botao{
+    font-size: 15px;
+    width: 50px;
+    margin-left: 45%;
+    border-radius: 12px;
+    border: 1px solid transparent;
+    box-shadow: 6px 4px 3px #000;
+    margin-bottom: 20px;
+}
+.botao:hover{
+    transition: .4s;
+    color: #fff;
+    width: 65px;
+    background: linear-gradient(72deg, rgb(213, 140, 250) 1%, #0a2950 99%);
+}
+/* Rodape */
+.roda{
+    width: 100%;
+    height: 100%;
+}
+.h1{
+    font-size: 40px;
+    margin-left: 10%;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tex_roda{
+    margin-left: 36%;
+    align-self: center;
+    color:#fff;
+    font-size: 25px;
+    font-family: fantasy;
+}
+@media (min-width: 300px) and (max-width:580px){
+    #container{
+        display:grid;
+        min-height: 100vh;
+        min-width: 100vw;
+        grid-template-areas: "cabeca cabeca cabeca"
+                             "texto texto texto"
+                             "rodape rodape rodape";
+        grid-template-rows: 0.3fr 1.3fr 0.3fr;
+    }
+    #logo{
+        font-size: 30px;
+    }
+    .texto{
+        grid-area: texto;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        background: linear-gradient(72deg, #3DEBB0 1%,#8956F3 99%);
+    }
+    #tex{
+        width: 90%;
+        height: 600px;
+        margin-bottom: 40px;
+    }
+}

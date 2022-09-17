@@ -1,0 +1,271 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* Grid Layout */
+#container{
+    display: grid;
+    min-width: 100vw;
+    min-height: 100vh;
+    grid-template-areas: "cabeca cabeca cabeca"
+                         "meio meio meio"
+                         "rodape rodape rodape";
+    grid-template-rows: 0.8fr 3.3fr 0.8fr;
+}
+#container>*{
+    border: 1px solid #000;
+}
+.cabeca{
+    grid-area: cabeca;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+.meio{
+    grid-area: meio;
+    background: linear-gradient(72deg, #3DEBB0 1%,#8956F3 99%);
+}
+.rodape{
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-around;
+    background:  linear-gradient(100deg, #000 2%, #1C1C1C 98%);
+    width: 100%;
+    height: 100%;
+}
+/* Edição cabecalho */
+.cabecalho{
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+   #logo{
+    margin-left: 80px;
+    font-size: 40px;
+    margin-left: 5px;
+    color: #fff;
+   }
+   #logo:hover{
+        font-size: 45px;
+    }
+    #title:hover{
+        transition: .4s;
+        background: linear-gradient(72deg, rgb(213, 140, 250) 1%, #0a2950 99%);
+    }
+   #menu{
+    align-self: flex-end;
+    justify-self: flex-end;
+    margin-right: 50px ;
+   }
+   .centro{
+    align-self: flex-end;
+   }
+   .summary{
+    display: none;
+   }
+   a{
+    text-decoration: none;
+    color: #fff;
+   }
+   .itemmenu{
+        text-decoration: none;
+        list-style-type: none;
+        display: inline-block;
+        align-self:  flex-end;
+        color: #fff;
+        margin-right: 15px;
+   }
+   .link:hover{
+        color: #3DEBB0;
+        font-size: 20px;
+        cursor: pointer;
+        transition: .4s;
+   }
+   #title{
+    color: black;
+    background: linear-gradient(72deg, #3DEBB0 1%,#8956F3 99%);
+    border-radius: 6px;
+   }
+   /*Meio*/
+   .content{
+    height: 400px;
+    width: 50%;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: 22%;
+    overflow: hidden;
+    position: absolute;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    box-shadow:  9px 7px 5px #48625a;
+}
+.navagation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+.bar{
+    width: 23px;
+    height: 23px;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin: 15px;
+    cursor: pointer;
+    transition: .4s;
+}
+.bar:hover{
+    background-color: #fff;
+}
+input{
+    display: none;
+}
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+.slide{
+    width: 20%;
+    transition: .6s;
+}
+.slide img{
+    width: 200px;
+    height: 200px;
+}
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+#slide2:checked ~ .s1{
+    margin-left: -20%;
+}
+#slide3:checked ~ .s1{
+    margin-left: -40%;
+}
+#x1{
+    background: linear-gradient(72deg, #ddd 1%, transparent 99% );
+}
+ #x2{
+    background: linear-gradient(72deg, #ddd 1%, transparent 99% );
+}
+ #x3{
+    background: linear-gradient(72deg, #ddd 1%, transparent 99% );
+}
+
+   /* Rodape */
+   .roda{
+    width: 100%;
+    height: 100%;
+}
+.h1{
+    font-size: 40px;
+    margin-left: 10%;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tex_roda{
+    margin-left: 36%;
+    align-self: center;
+    color:#fff;
+    font-size: 25px;
+    font-family: fantasy;
+}
+@media (min-width: 300px) and (max-width:580px){
+    #container{
+        display: grid;
+        min-width: 100vw;
+        min-height: 100vh;
+        grid-template-areas: "cabeca cabeca cabeca"
+                             "meio meio meio"
+                             "rodape rodape rodape";
+        grid-template-rows: 0.8fr 3.6fr 0.8fr;
+    }
+    body p{
+        font-size: 20px;
+    }
+     #logo{
+        width: 120%;
+         padding-left: 10px;
+         padding-right: 0%;
+        }
+        #logo h1{
+            width: 80%;
+            font-size: 40px;
+            padding-left: 60px;
+    }
+    #menu{
+    
+        padding-left: 0%;
+    }
+    .centro{
+        display: none;
+    }
+    .summary{
+        display: flex;
+    }
+    .h2{
+        width: 80%;
+        font-size: 30px;
+    }
+    .content{
+        height: 500px;
+        width: 80%;
+        margin-left: 38px;
+    }
+        .interior p{
+            font-size: 15px;
+        }
+    .interior{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-areas: "h2 h2 h2"
+                             "div div div";
+        grid-template-rows: 0.3fr 2fr ;
+    }
+    .interior h2{
+        grid-area: h2;
+        margin-left: 30px;
+        padding-left: 20px;
+    }
+    .interior img{
+        display: none;
+    }
+    .interior div{
+        color: #000;
+        grid-area: div;
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+}
+@media (min-width: 900px) and (max-width:1360px){
+    .content{
+        height: 500px;
+        width: 80%;
+        margin-left: 90px;
+    }
+    .cabecalho li{
+        font-size: 15px;
+    }
+}
+body, html {
+    overflow-x: hidden !important;
+    }
+    
+
+    @media (max-width: 786px){
+    body, html {
+    overflow-x: hidden!important;
+    }
+    }

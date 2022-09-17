@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cripto Info</title>
+    <link rel="stylesheet" href="css/pagina9.css">
+    <style>
+     .interior{
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-areas: "h2 h2 h2"
+                             "img div div";
+        grid-template-rows: 0.6fr 2fr ;
+    }
+    .interior h2{
+        grid-area: h2;
+        margin-left: 30px;
+        padding-left: 20px;
+    }
+    .interior img{
+        grid-area: img;
+        margin-left: 30px;
+    }
+    .interior div{
+        color: #000;
+        grid-area: div;
+        width: 85%;
+        margin-left: 20px;
+        padding-left: 20px;
+    }
+
+
+    #menuCelular{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-items: flex-start;
+            width: 60%;
+            margin-left: 100px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .summary{
+            background:linear-gradient(72deg, #3DEBB0 1%,#8956F3 99%);
+            font-size: 15px;
+            padding: 2px;
+            width: 80px;
+            color: #fff;
+            padding-left: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 3px 5px #000;
+            cursor: pointer;
+        }
+        .summary{
+            width: 90px;
+            height: 23px;
+            padding-left: 15px;
+        }
+        #menuRespon a{
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <header class="cabeca">
+            <nav class="cabecalho">
+                <div id="logo">
+                    <h1> <a href="index.html" title="Home Page" style="margin-left: 30px;">Cripto <span id="title">Info</span> </a></h1>
+                </div>
+                <div class="centro">
+                    <ul id="menu">
+                        <li class="itemmenu"><a class="link" href="pagina1.html">Tópicos Iniciais</a></li>
+                        <li class="itemmenu"><a class="link" href="pagina2.html">Criptomoedas</a></li>
+                        <li class="itemmenu"><a class="link" href="pagina3.html">Volatilidade</a></li>
+                        <li class="itemmenu"><a class="link" href="pagina4.html">Mercado</a></li>
+                        <li class="itemmenu"><a class="link" href="pagina5.html">Vantagens e Desvantagens</a></li>
+                        <li class="itemmenu"><a class="link" href="pagina6.html">Como minerar?</a></li>
+                        <li class="itemmenu"><a class="link" href="pagina7.html">Arte</a></li>
+                    </ul>
+                </div>
+                <div id="menuCelular">
+                    <details>
+                        <summary class="summary" style="color:#fff ;">Menu</summary>
+                        <ul id="menuRespon">
+                            <li class="itemmenu"><a class="link" href="pagina1.html">Tópicos</a></li>
+                            <li class="itemmenu"><a class="link" href="pagina2.html">Cripto</a></li>
+                            <li class="itemmenu"><a class="link" href="pagina3.html">Volatilidade</a></li>
+                            <li class="itemmenu"><a class="link" href="pagina4.html">Mercado</a></li>
+                            <li class="itemmenu"><a class="link" href="pagina5.html">proficiência</a></li>
+                            <li class="itemmenu"><a class="link" href="pagina6.html">Como minerar?</a></li>
+                            <li class="itemmenu"><a class="link" href="pagina7.html">Arte</a></li>
+                        </ul>
+                    </details>
+                </div>
+            </nav>
+        </header>
+        <aside class="meio">
+            <h2 class="h2" style="font-size:40px; margin-left: 40px;">Apresentação da Equipe:</h2>
+            <hr style="width:80% ;">
+            <div class="content">
+                <div class="slides" >
+                    <input type="radio" name="slide" id="slide1" checked>
+                    <input type="radio" name="slide" id="slide2">
+                    <input type="radio" name="slide" id="slide3">
+                    
+                    <div class="slide s1" id="x1">
+                        <div class="interior">
+                            <h2>Lúcio Weslley</h2>
+                            <img src="./imagem/anonimo.png" alt="anonimo">
+                            <div>
+                                <ul>
+                                    <li>Nome:Lúcio Weslley de Souza Leite</li>
+                                    <li>Idade:18 anos</li>
+                                    <li>Data de Nascimento:22/11/2003</li>
+                                </ul>
+                                <p>Co-fundador do site Cripto Info, aluno do curso de ADS (Análise e Desenvolvimento de Sistemas). Possuindo experiência em C, HTML e CSS; foi criado com site com intuito de 
+                                    informar mais informações acerca do universo do cripto a todo meio social, visando atingir todas as classes sociais.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide" id="x2">
+                        <div class="interior">
+                            <h2>Douglas Silva</h2>
+                            <img src="./imagem/anonimo.png" alt="anonimo">
+                            <div>
+                               <ul>
+                                    <li>Nome: Douglas da Silva Araújo</li>
+                                    <li>Idade: 18 anos</li>
+                                    <li>Data de Nascimento:26/12/2003</li>
+                                </ul>
+                                <p id="p">Co-fundador do site Cripto Info, aluno do curso de ADS (Análise e Desenvolvimento de Sistemas). Possuindo experiência em C, HTML e CSS; foi criado com site com intuito de 
+                                    informar mais informações acerca do universo do cripto a todo meio social, visando atingir todas as classes sociais.</p>
+                            </div>
+                    </div>
+                    </div>
+                    <div class="slide" id="x3">
+                        <div class="interior">
+                           <h2>Laerte Alves</h2>
+                           <img src="./imagem/anonimo.png" alt="anonimo">
+                           <div>
+                               <ul>
+                                    <li>Nome: Laerte Alves de Araújo</li>
+                                    <li>Idade:18</li>
+                                    <li>Data de Nascimento:28/12/2003</li>
+                                </ul>
+                                <p>Co-fundador do site Cripto Info, aluno do curso de ADS (Análise e Desenvolvimento de Sistemas). Possuindo experiência em C, HTML e CSS; foi criado com site com intuito de 
+                                    informar mais informações acerca do universo do cripto a todo meio social, visando atingir todas as classes sociais.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="navagation">
+                    <label class="bar" for="slide1"></label>
+                    <label class="bar" for="slide2"></label>
+                    <label class="bar" for="slide3"></label>
+                </div>
+            </div>
+        </aside>
+        <footer class="rodape">
+            <nav class="roda">
+                <h1 class="h1">Cripto <span id="title">Info</span></h1>
+                <p class="tex_roda">"O Site referência no universo dos Criptos"</p>
+            </nav>
+        </footer>
+    </div>
+    
+</body>
+</html>

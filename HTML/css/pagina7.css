@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+}
+/* Grid Layout */
+#container{
+    display: grid;
+    min-width: 100vw;
+    min-height: 100vh;
+    grid-template-areas: "cabeca cabeca cabeca"
+                         "meio meio meio"
+                         "texto texto texto"
+                         "rodape rodape rodape";
+    grid-template-rows: 1fr 2fr 2fr 1fr;
+}
+#container>*{
+    border: 1px solid #000;
+}
+.cabeca{
+    grid-area: cabeca;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+}
+.meio{
+    grid-area: meio;
+    background: linear-gradient(75deg, #ddd 2%, #1c1c1c 98%);
+}
+.texto{
+    grid-area: texto;
+    background: linear-gradient(75deg, #ddd 2%, #1c1c1c 98%);
+}
+.rodape{
+    grid-area: rodape;
+    display: flex;
+    justify-content: space-around;
+    background:  linear-gradient(100deg, #000 2%, #1C1C1C 98%);
+    width: 100%;
+    height: 100%;
+}
+/* Edição cabecalho */
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    align-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+   }
+   #logo{
+    margin-left: 80px;
+    font-size: 40px;
+    margin-left: 5px;
+    color: #fff;
+   }
+   #menu{
+    align-self: flex-end;
+    justify-self: flex-end;
+   }
+   .summary{
+    display: none;
+    }
+   ul{
+    overflow: hidden;
+   }
+   .centro{
+    align-self: flex-end;
+   }
+   a{
+    text-decoration: none;
+    color: #fff;
+   }
+   .itemmenu{
+        text-decoration: none;
+        list-style-type: none;
+        display: inline-block;
+        align-self:  flex-end;
+        color: #fff;
+        margin-right: 15px;
+   }
+   .link:hover{
+        color: #3DEBB0;
+        font-size: 20px;
+        cursor: pointer;
+        transition: .4s;
+   }
+   #title{
+    color: black;
+    background: linear-gradient(72deg, #3DEBB0 1%,#8956F3 99%);
+    border-radius: 6px;
+   }
+
+   /* Rodape */
+   .roda{
+    width: 100%;
+    height: 100%;
+}
+.h1{
+    font-size: 40px;
+    margin-left: 10%;
+    color: #fff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.tex_roda{
+    margin-left: 36%;
+    align-self: center;
+    color:#fff;
+    font-size: 25px;
+    font-family: fantasy;
+}
+
+@media (min-width: 300px) and (max-width:580px){
+    .centro{
+        display: none;
+    }
+    .summary{
+        display: flex;
+    }
+}
